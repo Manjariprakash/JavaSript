@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Date Validation Form</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   </head>
+   <body>
+     <form>
+         <div class="row d-flex justify-content-center mt-5">
+            <label class="control-label col-sm-1 text-end fw-bold fs-5" for="val_date">Date:</label>
+            <div class="col-sm-2  d-flex">
+               <input type="text" class="form-control" id="val_date" placeholder = "12/15/2015">
+            </div>
+            <label class= "col-sm-2 ps-2 d-flex fw-bold fs-5">e.g.: 12/15/2015</label>
+         </div>
+         <div class="row d-flex justify-content-center mt-3">
+            <label class="control-label col-sm-1  text-end fw-bold fs-5" for="val_format">Format:</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="val_format"  placeholder="M/D/Y">
+            </div>
+            <label class= "col-sm-2 ps-2 d-flex fw-bold fs-5">e.g.: M/D/Y</label>
+         </div>
+         <div class="row d-flex text-end mt-5">
+            <div class= "col-sm-6">
+               <button type="button" onclick="validateDate()">Validate</button>
+            </div>
+         </div>
+         <div class="row d-flex col-sm-12 text-center mt-4">
+           <div id="error_message" class="h5 text-danger"></div>
+           <div id="success_message" class="h5 text-success"></div>
+         </div>
+      </form>
+      <script src="dateValidate.js"></script>
+   </body>
+</html>
